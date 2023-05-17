@@ -1,0 +1,13 @@
+@mixin fontGilroy(
+  $size: 18px,
+  $color: $font-color,
+  $weight: 600,
+  $height: 33.3px
+) {
+  font-family: Gilroy-Regular;
+  font-size: $size;
+  color: $color;
+  font-style: normal;
+  font-weight: $weight;
+  line-height: $height;
+}

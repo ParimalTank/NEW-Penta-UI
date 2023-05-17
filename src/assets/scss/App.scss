@@ -1,14 +1,26 @@
 @import "variable";
 @import "mixin";
 @import "shimmer";
+// @import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+@import "fonts";
 
-.App {
-  //   max-width: 1304px;
-  font-family: "Gilroy-Bold", sans-serif;
-  font-family: "Gilroy-Heavy", sans-serif;
-  font-family: "Gilroy-Light", sans-serif;
-  font-family: "Gilroy-Medium", sans-serif;
-  font-family: "Gilroy-Regular", sans-serif;
+// @font-face {
+//   font-family: Gilroy-Regular;
+//   src: url("../fonts/gilroy/Gilroy-Regular.ttf");
+// }
+
+// * {
+//   //   max-width: 1304px;
+//   font-family: "Gilroy-Bold", sans-serif;
+//   font-family: "Gilroy-Heavy", sans-serif;
+//   font-family: "Gilroy-Light", sans-serif;
+//   font-family: "Gilroy-Medium", sans-serif;
+//   font-family: "Gilroy-Regular", sans-serif;
+// }
+
+.main {
+  max-width: 1304px;
+  margin: auto;
 }
 
 .home-img {
@@ -51,9 +63,251 @@
 .home-cart {
   span {
     position: absolute;
+    right: 4px;
   }
 }
 
 .navbar-menu {
-   gap: 8px;
+  gap: 8px;
+
+  li {
+    a {
+      padding-right: 62px !important;
+      padding-left: 25px !important;
+    }
+  }
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 84px;
+
+  .home-main-text {
+    // font-family: "Gilroy-Bold", sans-serif;
+    @include fontGilroy(80px , black , 600 , 130% );
+    // font-size: 80px;
+    // line-height: 130%;
+    /* or 104px */
+    text-align: center;
+    letter-spacing: -0.01em;
+    padding-bottom: 14px;
+  }
+
+  .home-sub-text {
+    font-family: "Gilroy-Regular";
+    font-size: 24px;
+    line-height: 160%;
+    /* or 38px */
+
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.8;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-bottom: 37px;
+  }
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  padding: 8px 8px 8px 20px;
+  gap: 10px;
+
+  .searchbar-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 344px;
+    height: 54px;
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 0.861538px solid rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(4px) !important;
+    border-radius: 42px !important;
+
+    input {
+      background: transparent;
+      border: none;
+      caret-color: white;
+
+      &:focus {
+        outline: none !important;
+        box-shadow: none;
+      }
+
+      &::placeholder {
+        color: white !important;
+      }
+    }
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #e58411;
+      border-radius: 50%;
+      // vertical-align: middle;
+      width: 40px;
+      height: 100%;
+      // padding: 11px;
+      // gap: 10px;
+
+      img {
+        //  padding: 8px;
+      }
+    }
+  }
+}
+
+// .searchbar-home::placeholder{
+//   color: white !important;
+// }
+
+.search-icon {
+  height: 14.25px;
+  width: 14.25px;
+}
+
+.about-us {
+  padding-top: 120px;
+}
+
+.about-texts {
+  padding-bottom: 12px;
+}
+
+.about-subtext {
+  font-family: "Gilroy-Regular";
+  font-size: 16px;
+  line-height: 185%;
+  /* or 30px */
+
+  color: #1e1e1e;
+  margin-bottom: 0;
+  padding-bottom: 14px;
+}
+
+.about-left-texts {
+  display: flex;
+  align-items: center;
+  //  justify-content: center;
+}
+
+.about-arrow {
+  padding-left: 17.5px !important;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+
+
+  .products-nav{
+    background: #eeeeee;
+    border-radius: 25px;
+    padding: 6px;
+    max-width: 348px;
+  }
+
+  a{
+     color: black;
+  }
+}
+
+.active-tab  {
+  background-color: #ffffff !important;
+  color: black !important;
+  border-radius: 32px !important;
+}
+
+.products-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-arrow{
+   color: blue;
+}
+
+.slick-prev:before {
+  content: url('../images/SliderArrawLeft.svg');
+  background-color: red;
+  border-radius: 50% !important;
+  padding: 12px !important;
+
+  display: block;
+  position: absolute;
+  z-index: 1000;
+
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.slick-next:before {
+  content: url('../images/SliderArraw.svg');
+  background-color: red;
+  border-radius: 50% !important;
+  padding: 12px !important;
+
+  display: block;
+  position: absolute;
+  right: 0px;
+  top:50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.products-images{
+  width: 217.9px !important;
+  height: 255.9px !important;
+}
+
+.products-card{
+  width: 268.09px;
+  height: 239.15px;
+  border: none !important;
+}
+
+.product-card-price-btn{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.price{
+  font-weight: 600;
+  font-size: 21.3251px;
+}
+
+.product-add{
+  width: 48.74px !important;
+  height: 48.74px !important;
+   border-radius: 50% !important;
+   background-color: #0D1B39 !important;
+}
+
+.checked {
+  color: orange;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-cart {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .home-cart {
+    display: none;
+  }
+
+  .home-main-text {
+    font-size: 30px !important;
+  }
+
+  .home-sub-text {
+    font-size: 15px !important;
+  }
 }
