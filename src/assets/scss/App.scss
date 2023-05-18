@@ -381,7 +381,7 @@
 
 .Img3 {
   position: relative;
-  padding-bottom: 270;
+  padding-bottom: 270px;
 
   &::before {
     background-image: url("../images/E1.png");
@@ -463,7 +463,16 @@
 .M2 {
   position: absolute;
   right: 0;
-  padding-top: 66px;
+  padding-top: 138px;
+
+  &::after {
+    position: absolute;
+    // background-image: url("../images/E2.png");
+    content: url("../images/M1.png");
+    right: -17px;
+    top: 72px;
+    z-index: -2;
+  }
 }
 
 .M3 {
