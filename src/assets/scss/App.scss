@@ -86,7 +86,7 @@
 
   .home-main-text {
     // font-family: "Gilroy-Bold", sans-serif;
-    @include fontGilroy(80px , black , 600 , 130% );
+    @include fontGilroy(80px, black, 600, 130%);
     // font-size: 80px;
     // line-height: 130%;
     /* or 104px */
@@ -198,29 +198,25 @@
   padding-left: 17.5px !important;
 }
 
-.about-info{
-    color: $orange;
-}
-
 .products {
   display: flex;
   justify-content: center;
   padding-top: 32px !important;
   padding-bottom: 80px !important;
 
-  .products-nav{
+  .products-nav {
     background: #eeeeee;
     border-radius: 25px;
     padding: 6px;
     max-width: 348px;
   }
 
-  a{
-     color: black;
+  a {
+    color: black;
   }
 }
 
-.active-tab  {
+.active-tab {
   background-color: #ffffff !important;
   color: black !important;
   border-radius: 32px !important;
@@ -232,18 +228,17 @@
   align-items: center;
 }
 
-.products-view{
+.products-view {
   color: $orange;
   padding-bottom: 50px !important;
 }
 
-
-.slick-arrow{
-   color: blue;
+.slick-arrow {
+  color: blue;
 }
 
 .slick-prev:before {
-  content: url('../images/SliderArrawLeft.svg');
+  content: url("../images/SliderArrawLeft.svg");
   background-color: red;
   border-radius: 50% !important;
   padding: 12px !important;
@@ -252,12 +247,12 @@
   position: absolute;
   z-index: 1000;
 
-  top:50%;
+  top: 50%;
   transform: translateY(-50%);
 }
 
 .slick-next:before {
-  content: url('../images/SliderArraw.svg');
+  content: url("../images/SliderArraw.svg");
   background-color: red;
   border-radius: 50% !important;
   padding: 12px !important;
@@ -265,133 +260,327 @@
   display: block;
   position: absolute;
   right: 0px;
-  top:50%;
+  top: 50%;
   transform: translateY(-50%);
   z-index: 1000;
 }
 
-.products-images{
+.products-images {
   width: 217.9px !important;
   height: 255.9px !important;
 }
 
-.products-card{
+.products-card {
   width: 268.09px;
   height: 239.15px;
   border: none !important;
 }
 
-.product-card-price-btn{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+.product-card-price-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.products-section{
-   background-color: #F7F7F7;
-   padding-top: 162px !important;
+.products-section {
+  background-color: #f7f7f7;
+  padding-top: 162px !important;
 }
 
-.products-view{
+.products-view {
   padding-top: 60px;
-   padding-right: 16.5px;
+  padding-right: 16.5px;
 }
 
-.product-vector{
+.product-vector {
   padding-top: 60px;
   padding-bottom: 50px !important;
 }
 
-.price{
+.price {
   font-weight: 600;
   font-size: 21.3251px;
 }
 
-.product-add{
+.product-add {
   width: 48.74px !important;
   height: 48.74px !important;
-   border-radius: 50% !important;
-   background-color: #0D1B39 !important;
+  border-radius: 50% !important;
+  background-color: #0d1b39 !important;
 }
 
 .checked {
   color: orange;
 }
 
+.testimonial-slider {
+}
+
+.testimonial-image1 {
+  background: url("../images/S1.png") no-repeat center center/cover;
+  width: 370px !important;
+  height: 506px !important;
+  display: flex !important;
+  align-items: end;
+}
+
+.testimonial-image2 {
+  @extend .testimonial-image1;
+  background: url("../images/S2.png") no-repeat center center/cover;
+}
+
+.testimonial-image3 {
+  @extend .testimonial-image1;
+  background: url("../images/S3.png") no-repeat center center/cover;
+}
+
+.testimonial-images {
+  width: 50px !important;
+  height: 50px !important;
+  display: inline-block !important;
+  border: 6px solid white;
+  border-radius: 50% !important;
+  margin-top: -19px !important;
+}
+
+.card-data {
+  width: 80%;
+  margin: 0 auto;
+  background: $white;
+  text-align: center;
+}
+
+.testimonial-card {
+  position: absolute;
+  width: 334px;
+  height: 239px;
+  left: 145px;
+  top: 100px;
+  z-index: 9;
+}
+
+.slick-list {
+  margin-left: 45px;
+}
 
 /* Experience Section */
 
-.Img1{
-   position: absolute;
-   padding-top: 240px !important;
-}
-
-.Img2{
-   padding-top: 378px !important;
-   padding-left: 195px !important;
-}
-
-.Img3{
-  position: absolute;
+.experiences {
   padding-top: 306px !important;
 }
 
-.M1{
-   position: absolute;
-   right: 0;
+// .Img1 {
+//   position: absolute;
+//   padding-top: 240px !important;
+// }
+
+// .Img2 {
+//   padding-top: 378px !important;
+//   padding-left: 195px !important;
+// }
+
+.Img3 {
+  position: relative;
+  padding-bottom: 270;
+
+  &::before {
+    background-image: url("../images/E1.png");
+    content: url("../images/E1.png");
+    position: absolute;
+    top: -66px;
+    left: 0;
+    z-index: -1;
+    // padding-top: 240px !important;
+  }
+
+  &::after {
+    position: absolute;
+    // background-image: url("../images/E2.png");
+    content: url("../images/E2.png");
+    right: -17px;
+    top: 72px;
+    z-index: -2;
+  }
 }
 
-.M2{
-   position: absolute;
-   right: 0;
-   padding-top: 66px;
+.experiences-section {
+  padding-left: 56px;
+  padding-top: 10px;
 }
 
-.M3{
-   padding-bottom: 47px !important;
+.experiences-text-title {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.175em;
+  text-transform: uppercase;
+  color: $orange;
+}
+
+.experiences-sub-text-title {
+  font-size: 42px;
+  line-height: 49px;
+  text-transform: capitalize;
+}
+
+.experiences-sub-text-description {
+  font-size: 18px;
+  line-height: 33px;
+}
+
+.materials-section {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  padding-top: 128px;
+}
+
+.material-text {
+  font-size: 42px;
+  line-height: 49px;
+  text-transform: capitalize;
+}
+
+.material-sub-text {
+  font-size: 18px;
+  line-height: 33px;
+  color: #1e1e1e;
+  opacity: 0.8;
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+
+.more-info {
+  color: $orange;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.M1 {
+  position: absolute;
+  right: 0;
+}
+
+.M2 {
+  position: absolute;
+  right: 0;
+  padding-top: 66px;
+}
+
+.M3 {
+  padding-bottom: 47px !important;
 }
 
 /* Testimonial Section*/
-.testimonials{
-   
+.testimonials {
+  padding-top: 240px;
+  padding-bottom: 214px;
+
+  .testimonials-title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.175em;
+    text-transform: uppercase;
+    color: $orange;
+  }
+
+  .client-review-section {
+    font-size: 42px;
+    line-height: 49px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #1e1e1e;
+    padding-bottom: 60px;
+  }
 }
 
-.footer{
-   background-color: #F7F7F7;
+.footer {
+  background-color: #f7f7f7;
+  padding-left: 188px;
+  padding-right: 188px;
 }
 
-.footer-logo{
-   padding-top: 118px !important;
+.footer-logo {
+  padding-top: 118px !important;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: $black;
 }
 
-.footer-left{
+.footer-left {
   // padding-right: 140px !important;
 }
 
-.follow-us{
-   padding-right: 11px !important;
+.follow-us {
+  padding-right: 11px !important;
 }
 
-.footer-service{
+.footer-service {
   padding-top: 118px !important;
   list-style: none !important;
 }
 
-.footer-services{
-   color: $orange;
+.footer-services {
+  color: $orange;
+  padding-bottom: 20px;
+
+  li {
+    padding-left: 110px;
+  }
 }
 
-.footer-copyright{
-   display: flex;
-   justify-content: space-between;
+.f-service {
+  li {
+    padding-bottom: 16px !important;
+  }
 }
 
-.footer-subtext{
-   padding-top: 21px !important;
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.204545px;
+  color: #1e2833;
+  padding-top: 100px;
 }
 
-.term-condition{
-   padding-right: 40px !important;
+.footer-subtext {
+  padding-top: 21px !important;
+  font-size: 15px;
+  line-height: 24px;
+  color: $black;
+  opacity: 0.8;
+}
+
+.term-condition {
+  padding-right: 40px !important;
+  // font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.204545px;
+  color: #1e2833;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.privacy-policy {
+  font-size: 15px;
+  color: #1e2833 !important;
+  opacity: 0.5;
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.204545px;
+  color: #1e2833;
+  mix-blend-mode: normal;
+  opacity: 0.5;
 }
 
 @media only screen and (max-width: 768px) {
