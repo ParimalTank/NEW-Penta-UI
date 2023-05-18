@@ -198,10 +198,15 @@
   padding-left: 17.5px !important;
 }
 
+.about-info{
+    color: $orange;
+}
+
 .products {
   display: flex;
   justify-content: center;
-
+  padding-top: 32px !important;
+  padding-bottom: 80px !important;
 
   .products-nav{
     background: #eeeeee;
@@ -226,6 +231,12 @@
   justify-content: center;
   align-items: center;
 }
+
+.products-view{
+  color: $orange;
+  padding-bottom: 50px !important;
+}
+
 
 .slick-arrow{
    color: blue;
@@ -276,6 +287,21 @@
    align-items: center;
 }
 
+.products-section{
+   background-color: #F7F7F7;
+   padding-top: 162px !important;
+}
+
+.products-view{
+  padding-top: 60px;
+   padding-right: 16.5px;
+}
+
+.product-vector{
+  padding-top: 60px;
+  padding-bottom: 50px !important;
+}
+
 .price{
   font-weight: 600;
   font-size: 21.3251px;
@@ -290,6 +316,82 @@
 
 .checked {
   color: orange;
+}
+
+
+/* Experience Section */
+
+.Img1{
+   position: absolute;
+   padding-top: 240px !important;
+}
+
+.Img2{
+   padding-top: 378px !important;
+   padding-left: 195px !important;
+}
+
+.Img3{
+  position: absolute;
+  padding-top: 306px !important;
+}
+
+.M1{
+   position: absolute;
+   right: 0;
+}
+
+.M2{
+   position: absolute;
+   right: 0;
+   padding-top: 66px;
+}
+
+.M3{
+   padding-bottom: 47px !important;
+}
+
+/* Testimonial Section*/
+.testimonials{
+   
+}
+
+.footer{
+   background-color: #F7F7F7;
+}
+
+.footer-logo{
+   padding-top: 118px !important;
+}
+
+.footer-left{
+  // padding-right: 140px !important;
+}
+
+.follow-us{
+   padding-right: 11px !important;
+}
+
+.footer-service{
+  padding-top: 118px !important;
+  list-style: none !important;
+}
+
+.footer-services{
+   color: $orange;
+}
+
+.footer-copyright{
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer-subtext{
+   padding-top: 21px !important;
+}
+
+.term-condition{
+   padding-right: 40px !important;
 }
 
 @media only screen and (max-width: 768px) {

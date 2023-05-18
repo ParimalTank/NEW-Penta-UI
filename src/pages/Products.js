@@ -17,7 +17,12 @@ import {
   TabPane,
 } from "reactstrap";
 import Img1 from "../assets/images/1.png"
+import Img2 from "../assets/images/2.png"
+import Img3 from "../assets/images/3.png"
+import Img4 from "../assets/images/4.png"
+import vetorArraw from "../assets/images/VectorArraw.svg"
 import cardAdd from "../assets/images/card-plas.svg"
+
 
 const Products = () => {
   const [tab, setTab] = useState("1");
@@ -31,7 +36,7 @@ const Products = () => {
   };
 
   return (
-    <section className="main" >
+    <section className="main products-section" >
       <div className="products-main">
         <h3>Best Selling Products</h3>
       </div>
@@ -119,33 +124,109 @@ const Products = () => {
                     </Card>
                 </div>
                 <div>
-                    <h3>2</h3>
+                <Card className="products-card">
+                        <CardImg
+                            className="products-images"
+                            alt="Card image cap"
+                            src={Img2}
+                        />
+                        <CardBody>
+                        <CardTitle tag="h5">
+                            Chair
+                        </CardTitle>
+                        <CardSubtitle
+                            className="mb-2 text-muted"
+                            tag="h6"
+                        >
+                            Baltsar Chair
+                        </CardSubtitle>
+                        <CardText>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                        </CardText>
+
+                        <div className="product-card-price-btn">
+                            <h4 className="price">$392</h4>
+                            <Button className="product-add">
+                                <img src={cardAdd}   alt="card-add"/>
+                            </Button>
+                        </div>
+                        </CardBody>
+                    </Card>
                 </div>
                 <div>
-                    <h3>3</h3>
+                <Card className="products-card">
+                        <CardImg
+                            className="products-images"
+                            alt="Card image cap"
+                            src={Img3}
+                        />
+                        <CardBody>
+                        <CardTitle tag="h5">
+                            Chair
+                        </CardTitle>
+                        <CardSubtitle
+                            className="mb-2 text-muted"
+                            tag="h6"
+                        >
+                            Baltsar Chair
+                        </CardSubtitle>
+                        <CardText>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                        </CardText>
+
+                        <div className="product-card-price-btn">
+                            <h4 className="price">$392</h4>
+                            <Button className="product-add">
+                                <img src={cardAdd}   alt="card-add"/>
+                            </Button>
+                        </div>
+                        </CardBody>
+                    </Card>
                 </div>
                 <div>
-                    <h3>4</h3>
-                </div>
-                <div>
-                    <h3>5</h3>
-                </div>
-                <div>
-                    <h3>6</h3>
-                </div>
-                <div>
-                    <h3>7</h3>
-                </div>
-                <div>
-                    <h3>8</h3>
-                </div>
-                <div>
-                    <h3>9</h3>
+                <Card className="products-card">
+                        <CardImg
+                            className="products-images"
+                            alt="Card image cap"
+                            src={Img4}
+                        />
+                        <CardBody>
+                        <CardTitle tag="h5">
+                            Chair
+                        </CardTitle>
+                        <CardSubtitle
+                            className="mb-2 text-muted"
+                            tag="h6"
+                        >
+                            Baltsar Chair
+                        </CardSubtitle>
+                        <CardText>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                        </CardText>
+
+                        <div className="product-card-price-btn">
+                            <h4 className="price">$392</h4>
+                            <Button className="product-add">
+                                <img src={cardAdd}   alt="card-add"/>
+                            </Button>
+                        </div>
+                        </CardBody>
+                    </Card>
                 </div>
                 </Slider>
             </div>
-
-
               </Col>
             </Row>
           </TabPane>
@@ -155,7 +236,7 @@ const Products = () => {
             <Row>
               <Col sm="6">
                 <Card body>
-                  <CardTitle>Special Title Treatment</CardTitle>
+                  <CardTitle>Special Chairs</CardTitle>
                   <CardText>
                     With supporting text below as a natural lead-in to
                     additional content.
@@ -165,7 +246,7 @@ const Products = () => {
               </Col>
               <Col sm="6">
                 <Card body>
-                  <CardTitle>Special Title Treatment</CardTitle>
+                  <CardTitle>Special Chairs</CardTitle>
                   <CardText>
                     With supporting text below as a natural lead-in to
                     additional content.
@@ -175,9 +256,12 @@ const Products = () => {
               </Col>
             </Row>
           </TabPane>
-
-
         </TabContent>
+
+        <div className="d-flex justify-content-center align-item-center">
+           <h3 className="products-view">View All</h3>
+           <img className="product-vector" src={vetorArraw} alt="" />
+        </div>
       </div>
     </section>
   );

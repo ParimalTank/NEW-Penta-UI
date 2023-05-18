@@ -111,21 +111,21 @@ const Home = () => {
                      Luxury facilities
                   </h3>
                   <p className="about-subtext">The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
-                  <h2 >More Info<img className="about-arrow" src={arrow} alt="more"></img></h2>
+                  <h2  className="about-info">More Info<img className="about-arrow" src={arrow} alt="more"></img></h2>
                </Col>
                <Col>
                    <h3 className="about-texts">
                      Affordable Price
                   </h3>
                     <p className="about-subtext">You can get a workspace of the highst quality at an affordable price and still enjoy the facilities that are oly here.</p>
-                    <h2 >More Info<img className="about-arrow" src={arrow} alt="more"></img></h2>
+                    <h2 className="about-info" >More Info<img className="about-arrow" src={arrow} alt="more"></img></h2>
                </Col>
                <Col>
                   <h3 className="about-texts">
                      Many Choices
                   </h3>
                     <p className="about-subtext">We provide many unique work space choices so that you can choose the workspace to your liking.</p>
-                    <h2 >More Info<img className="about-arrow" src={arrow} alt="more"></img></h2>
+                    <h2 className="about-info" >More Info<img className="about-arrow" src={arrow} alt="more"></img></h2>
                </Col>
             </Row>
 
