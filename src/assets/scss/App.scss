@@ -171,6 +171,7 @@
 
 .about-us {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .about-texts {
@@ -276,6 +277,10 @@
   border: none !important;
 }
 
+.card-img {
+  margin-top: -50px !important;
+}
+
 .product-card-price-btn {
   display: flex;
   justify-content: space-between;
@@ -348,6 +353,8 @@
   margin: 0 auto;
   background: $white;
   text-align: center;
+  margin-bottom: 22px;
+  border-radius: 18.1182px;
 }
 
 .testimonial-card {
@@ -435,9 +442,15 @@
 }
 
 .material-text {
-  font-size: 42px;
   line-height: 49px;
   text-transform: capitalize;
+  font-size: 18px;
+  line-height: 33px;
+  color: #1e1e1e;
+  opacity: 0.8;
+}
+
+.materials-text {
 }
 
 .material-sub-text {
@@ -599,6 +612,20 @@
 }
 
 @media only screen and (max-width: 425px) {
+  .home-cart {
+    display: none;
+  }
+
+  .home-main-text {
+    font-size: 30px !important;
+  }
+
+  .home-sub-text {
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .home-cart {
     display: none;
   }

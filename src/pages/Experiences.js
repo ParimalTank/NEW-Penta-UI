@@ -1,7 +1,5 @@
 import React from "react";
 import { Col, Row } from "reactstrap";
-import E1 from "../assets/images/E1.png";
-import E2 from "../assets/images/E2.png";
 import E3 from "../assets/images/E3.png";
 import M1 from "../assets/images/M1.png";
 import M2 from "../assets/images/M2.png";
@@ -11,8 +9,8 @@ import vetorArraw from "../assets/images/VectorArraw.svg";
 
 export const Experiences = () => {
   return (
-    <div className="main experiences">
-      <Row>
+    <div className="experiences">
+      <Row md={2} sm={2}>
         <Col>
           <div className="Img3">
             <img src={E3} alt="" />
@@ -47,14 +45,14 @@ export const Experiences = () => {
         </Col>
       </Row>
 
-      <Row>
+      <Row md={2} sm={2}>
         <Col>
           <div className="materials-section">
             <div>
               <h3 className="more-info">MATERIALS</h3>
             </div>
             <div>
-              <h1 className="material-text">
+              <h1 className="materials-text">
                 Very serious materials for making furniture
               </h1>
             </div>

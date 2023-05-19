@@ -87,20 +87,20 @@ const Products = () => {
                   <Slider {...settings}>
                     <div>
                       <Card className="products-card">
-                        <div>
-                          <CardImg
-                            className="products-images"
-                            alt="Card image cap"
-                            src={Img1}
-                          />
-                        </div>
+                        {/* <div> */}
+                        <CardImg
+                          className="products-images"
+                          alt="Card image cap"
+                          src={Img1}
+                        />
+                        {/* </div> */}
 
                         <div>
                           <CardBody>
-                            <CardTitle tag="h5">Chair</CardTitle>
                             <CardSubtitle className="mb-2 text-muted" tag="h6">
-                              Sakarias Armchair
+                              Chair
                             </CardSubtitle>
+                            <CardTitle tag="h5">Sakarias Armchair</CardTitle>
                             <CardText>
                               <span class="fa fa-star checked"></span>
                               <span class="fa fa-star checked"></span>
@@ -127,10 +127,10 @@ const Products = () => {
                           src={Img2}
                         />
                         <CardBody>
-                          <CardTitle tag="h5">Chair</CardTitle>
                           <CardSubtitle className="mb-2 text-muted" tag="h6">
-                            Baltsar Chair
+                            Chair
                           </CardSubtitle>
+                          <CardTitle tag="h5">Baltsar Chair</CardTitle>
                           <CardText>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -156,10 +156,10 @@ const Products = () => {
                           src={Img3}
                         />
                         <CardBody>
-                          <CardTitle tag="h5">Chair</CardTitle>
                           <CardSubtitle className="mb-2 text-muted" tag="h6">
-                            Baltsar Chair
+                            Chair
                           </CardSubtitle>
+                          <CardTitle tag="h5">Baltsar Chair</CardTitle>
                           <CardText>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -185,10 +185,10 @@ const Products = () => {
                           src={Img4}
                         />
                         <CardBody>
-                          <CardTitle tag="h5">Chair</CardTitle>
                           <CardSubtitle className="mb-2 text-muted" tag="h6">
-                            Baltsar Chair
+                            Chair
                           </CardSubtitle>
+                          <CardTitle tag="h5">Anjay Chair</CardTitle>
                           <CardText>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
