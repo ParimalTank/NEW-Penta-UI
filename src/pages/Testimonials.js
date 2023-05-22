@@ -23,7 +23,34 @@ export const Testimonials = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const CardDataArray = [
@@ -113,6 +140,36 @@ export const Testimonials = () => {
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
+                  </CardText>
+                </CardBody>
+              </div>
+            </div>
+
+            <div className="testimonial-image3">
+              <div className="card-data text-center">
+                <CardImg
+                  className="testimonial-images"
+                  alt="Card image cap"
+                  src={P3}
+                />
+                <CardBody>
+                  <CardTitle tag="h5">Mpok Ina</CardTitle>
+
+                  <CardSubtitle className="mb-2 text-muted" tag="h6">
+                    Pedagang Asongan
+                  </CardSubtitle>
+
+                  <CardSubtitle className="mb-2 text-muted" tag="h6">
+                    “Sangat terjangkau untuk kantong saya yang tidak terlalu
+                    banyak“
+                  </CardSubtitle>
+
+                  <CardText>
+                    <span className="fa fa-star checked"></span>
+                    <span className="fa fa-star checked"></span>
+                    <span className="fa fa-star checked"></span>
+                    <span className="fa fa-star checked"></span>
+                    <span className="fa fa-star checked"></span>
                   </CardText>
                 </CardBody>
               </div>
