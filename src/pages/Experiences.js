@@ -10,13 +10,13 @@ import vetorArraw from "../assets/images/VectorArraw.svg";
 export const Experiences = () => {
   return (
     <div className="experiences">
-      <Row md={2} sm={2}>
-        <Col>
+      <Row>
+        <Col sm={12} lg={6}>
           <div className="Img3">
-            <img src={E3} alt="" />
+            <img src={E3} alt="" className="img-fluid" />
           </div>
         </Col>
-        <Col>
+        <Col sm={12} lg={6}>
           <div className="experiences-section">
             <div>
               <h5 className="experiences-text-title">EXPERIENCE</h5>
@@ -45,8 +45,9 @@ export const Experiences = () => {
         </Col>
       </Row>
 
-      <Row md={2} sm={2}>
-        <Col>
+      <Row>
+        {/* order-lg-1 order-2 */}
+        <Col lg={6} md={12} className="order-md-1 order-2">
           <div className="materials-section">
             <div>
               <h3 className="more-info">MATERIALS</h3>
@@ -72,15 +73,17 @@ export const Experiences = () => {
             </div>
           </div>
         </Col>
-        <Col>
-          <Row>
+
+        <Col lg={6} md={12} className="order-md-2 order-1 d-inline-block">
+          <Row className="flex-lg-row flex-column">
             <Col>
               <div>
                 <img className="M3" src={M3} alt=""></img>
                 <img className="M4" src={M4} alt=""></img>
               </div>
             </Col>
-            <Col>
+
+            <Col className="">
               <div>
                 <img className="M1" src={M1} alt="" />
                 <img className="M2" src={M2} alt="" />

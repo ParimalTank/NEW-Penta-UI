@@ -35,24 +35,21 @@ const Products = () => {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1300,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          infinite: true,
-          dots: true,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 1020,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -122,28 +119,28 @@ const Products = () => {
                         />
                         {/* </div> */}
 
-                        <div>
-                          <CardBody>
-                            <CardSubtitle className="mb-2 text-muted" tag="h6">
-                              Chair
-                            </CardSubtitle>
-                            <CardTitle tag="h5">Sakarias Armchair</CardTitle>
-                            <CardText>
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star checked"></span>
-                            </CardText>
+                        {/* <div> */}
+                        <CardBody>
+                          <CardSubtitle className="mb-2 text-muted" tag="h6">
+                            Chair
+                          </CardSubtitle>
+                          <CardTitle tag="h5">Sakarias Armchair</CardTitle>
+                          <CardText>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                          </CardText>
 
-                            <div className="product-card-price-btn">
-                              <h4 className="price">$392</h4>
-                              <Button className="product-add">
-                                <img src={cardAdd} alt="card-add" />
-                              </Button>
-                            </div>
-                          </CardBody>
-                        </div>
+                          <div className="product-card-price-btn">
+                            <h4 className="price">$392</h4>
+                            <Button className="product-add">
+                              <img src={cardAdd} alt="card-add" />
+                            </Button>
+                          </div>
+                        </CardBody>
+                        {/* </div> */}
                       </Card>
                     </div>
                     <div>

@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div>
-        <Row>
+        <Row lg={4} md={2} sm={2} xs={1}>
           <Col>
             <div className="footer-left">
               <h1 className="footer-logo">Panto</h1>
