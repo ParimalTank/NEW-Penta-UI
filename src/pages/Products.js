@@ -111,20 +111,22 @@ const Products = () => {
                   <Slider {...settings}>
                     <div>
                       <Card className="products-card">
-                        {/* <div> */}
                         <CardImg
                           className="products-images"
                           alt="Card image cap"
                           src={Img1}
                         />
-                        {/* </div> */}
 
-                        {/* <div> */}
                         <CardBody>
-                          <CardSubtitle className="mb-2 text-muted" tag="h6">
+                          <CardSubtitle
+                            className="mb-2 text-muted products-sub-text"
+                            tag="h6"
+                          >
                             Chair
                           </CardSubtitle>
-                          <CardTitle tag="h5">Sakarias Armchair</CardTitle>
+                          <CardTitle className="products-card-text" tag="h5">
+                            Sakarias Armchair
+                          </CardTitle>
                           <CardText>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -151,7 +153,10 @@ const Products = () => {
                           src={Img2}
                         />
                         <CardBody>
-                          <CardSubtitle className="mb-2 text-muted" tag="h6">
+                          <CardSubtitle
+                            className="mb-2 text-muted products-sub-text"
+                            tag="h6"
+                          >
                             Chair
                           </CardSubtitle>
                           <CardTitle tag="h5">Baltsar Chair</CardTitle>
@@ -181,10 +186,15 @@ const Products = () => {
                           src={Img3}
                         />
                         <CardBody>
-                          <CardSubtitle className="mb-2 text-muted" tag="h6">
+                          <CardSubtitle
+                            className="mb-2 text-muted products-sub-text"
+                            tag="h6"
+                          >
                             Chair
                           </CardSubtitle>
-                          <CardTitle tag="h5">Baltsar Chair</CardTitle>
+                          <CardTitle className="products-card-text" tag="h5">
+                            Baltsar Chair
+                          </CardTitle>
                           <CardText>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -211,10 +221,15 @@ const Products = () => {
                           src={Img4}
                         />
                         <CardBody>
-                          <CardSubtitle className="mb-2 text-muted" tag="h6">
+                          <CardSubtitle
+                            className="mb-2 text-muted products-sub-text"
+                            tag="h6"
+                          >
                             Chair
                           </CardSubtitle>
-                          <CardTitle tag="h5">Anjay Chair</CardTitle>
+                          <CardTitle className="products-card-text" tag="h5">
+                            Anjay Chair
+                          </CardTitle>
                           <CardText>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -241,10 +256,15 @@ const Products = () => {
                           src={Img4}
                         />
                         <CardBody>
-                          <CardSubtitle className="mb-2 text-muted" tag="h6">
+                          <CardSubtitle
+                            className="mb-2 text-muted products-sub-text"
+                            tag="h6"
+                          >
                             Chair
                           </CardSubtitle>
-                          <CardTitle tag="h5">Anjay Chair</CardTitle>
+                          <CardTitle className="products-card-text" tag="h5">
+                            Anjay Chair
+                          </CardTitle>
                           <CardText>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>

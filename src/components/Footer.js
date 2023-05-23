@@ -13,8 +13,8 @@ export const Footer = () => {
             <div className="footer-left">
               <h1 className="footer-logo">Panto</h1>
               <h3 className="footer-subtext">
-                The advantage of hiring a workspace with us is that givees you
-                comfortable service and all-around facilities.
+                The advantage of hiring a workspace with <br /> us is that
+                givees you comfortable service <br /> and all-around facilities.
               </h3>
             </div>
           </Col>

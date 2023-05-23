@@ -1,11 +1,9 @@
 import React from "react";
-import S1 from "../assets/images/S1.png";
-import S2 from "../assets/images/S2.png";
-import S3 from "../assets/images/S3.png";
+// import S1 from "../assets/images/S1.png";
+// import S2 from "../assets/images/S2.png";
+// import S3 from "../assets/images/S3.png";
 import Slider from "react-slick";
 import {
-  Button,
-  Card,
   CardBody,
   CardImg,
   CardSubtitle,
@@ -50,26 +48,26 @@ export const Testimonials = () => {
     ],
   };
 
-  const CardDataArray = [
-    {
-      image: P1,
-      userName: "Bang Upin",
-      position: "Pedagang Asongan",
-      testimonial: `“Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“`,
-    },
-    {
-      image: P2,
-      userName: "Ibuk Sukijan",
-      position: "Ibu Rumah Tangga",
-      testimonial: `“Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“`,
-    },
-    {
-      image: P3,
-      userName: "Mpok Ina",
-      position: "Karyawan Swasta",
-      testimonial: `“Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“`,
-    },
-  ];
+  // const CardDataArray = [
+  //   {
+  //     image: P1,
+  //     userName: "Bang Upin",
+  //     position: "Pedagang Asongan",
+  //     testimonial: `“Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“`,
+  //   },
+  //   {
+  //     image: P2,
+  //     userName: "Ibuk Sukijan",
+  //     position: "Ibu Rumah Tangga",
+  //     testimonial: `“Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“`,
+  //   },
+  //   {
+  //     image: P3,
+  //     userName: "Mpok Ina",
+  //     position: "Karyawan Swasta",
+  //     testimonial: `“Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“`,
+  //   },
+  // ];
 
   return (
     <section className="main">
@@ -90,13 +88,13 @@ export const Testimonials = () => {
                   src={P1}
                 />
                 <CardBody>
-                  <CardTitle tag="h5">Bang Upin</CardTitle>
+                  <CardTitle className='testimonial-card-title' tag="h5">Bang Upin</CardTitle>
 
-                  <CardSubtitle className="mb-2 text-muted" tag="h6">
+                  <CardSubtitle className="mb-2 text-muted testimonial-card-subtitle" tag="h6">
                     Pedagang Asongan
                   </CardSubtitle>
 
-                  <CardSubtitle className="mb-2 text-muted" tag="h6">
+                  <CardSubtitle className="mb-2 text-muted testimonial-card-description" tag="h6">
                     “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan
                     terlihat mahal“
                   </CardSubtitle>
@@ -120,13 +118,13 @@ export const Testimonials = () => {
                   src={P2}
                 />
                 <CardBody>
-                  <CardTitle tag="h5">Ibuk Sukijan</CardTitle>
+                  <CardTitle className='testimonial-card-title' tag="h5">Ibuk Sukijan</CardTitle>
 
-                  <CardSubtitle className="mb-2 text-muted" tag="h6">
+                  <CardSubtitle className="mb-2 text-muted testimonial-card-subtitle" tag="h6">
                     Karyawan Swasta
                   </CardSubtitle>
 
-                  <CardSubtitle className="mb-2 text-muted" tag="h6">
+                  <CardSubtitle className="mb-2 text-muted testimonial-card-description" tag="h6">
                     “Makasih Panto, aku sekarang berasa tinggal di apartment
                     karena barang-barang yang terlihat mewah“
                   </CardSubtitle>
@@ -150,18 +148,18 @@ export const Testimonials = () => {
                   src={P3}
                 />
                 <CardBody>
-                  <CardTitle tag="h5">Mpok Ina</CardTitle>
+                  <CardTitle className='testimonial-card-title' tag="h5">Mpok Ina</CardTitle>
 
-                  <CardSubtitle className="mb-2 text-muted" tag="h6">
+                  <CardSubtitle className="mb-2 text-muted testimonial-card-subtitle" tag="h6">
                     Pedagang Asongan
                   </CardSubtitle>
 
-                  <CardSubtitle className="mb-2 text-muted" tag="h6">
+                  <CardSubtitle className="mb-2 text-muted testimonial-card-description" tag="h6">
                     “Sangat terjangkau untuk kantong saya yang tidak terlalu
                     banyak“
                   </CardSubtitle>
 
-                  <CardText>
+                  <CardText className="review-star">
                     <span className="fa fa-star checked"></span>
                     <span className="fa fa-star checked"></span>
                     <span className="fa fa-star checked"></span>
@@ -180,18 +178,18 @@ export const Testimonials = () => {
                   src={P3}
                 />
                 <CardBody>
-                  <CardTitle tag="h5">Mpok Ina</CardTitle>
+                  <CardTitle  className='testimonial-card-title' tag="h5">Mpok Ina</CardTitle>
 
-                  <CardSubtitle className="mb-2 text-muted" tag="h6">
+                  <CardSubtitle className="mb-2 text-muted testimonial-card-subtitle" tag="h6">
                     Pedagang Asongan
                   </CardSubtitle>
 
-                  <CardSubtitle className="mb-2 text-muted" tag="h6">
+                  <CardSubtitle className="mb-2 text-muted testimonial-card-description" tag="h6">
                     “Sangat terjangkau untuk kantong saya yang tidak terlalu
                     banyak“
                   </CardSubtitle>
 
-                  <CardText>
+                  <CardText className="review-star">
                     <span className="fa fa-star checked"></span>
                     <span className="fa fa-star checked"></span>
                     <span className="fa fa-star checked"></span>

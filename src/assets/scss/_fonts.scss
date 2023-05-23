@@ -1,23 +1,28 @@
+// Bold Font
 @font-face {
-  font-family: "Gilroy-Regular";
-  font-weight: 600;
-  src: url("../fonts/gilroy/Gilroy-Regular.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: "Gilroy-Bold";
-  font-weight: 600;
+  font-family: Gilroy;
+  font-weight: 800;
   src: url("../fonts/gilroy/Gilroy-Bold.ttf") format("ttf");
 }
 
-@font-face {
-  font-family: "Gilroy-Medium";
-  font-weight: 600;
-  src: url("../fonts/gilroy/Gilroy-Medium.ttf") format("ttf");
-}
+// SemiBold Font
 
 @font-face {
-  font-family: "Gilroy-Medium";
+  font-family: Gilroy;
+  font-weight: 700;
+  src: url("../fonts/gilroy/Gilroy-Bold.ttf") format("ttf");
+}
+
+// Regular Font
+@font-face {
+  font-family: Gilroy;
+  font-weight: 500;
+  src: url("../fonts/gilroy/Gilroy-Regular.ttf") format("ttf");
+}
+
+// Medium Font
+@font-face {
+  font-family: Gilroy;
   font-weight: 600;
   src: url("../fonts/gilroy/Gilroy-Medium.ttf") format("ttf");
 }

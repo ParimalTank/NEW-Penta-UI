@@ -1,10 +1,7 @@
 import React from "react";
 import { Col, Row } from "reactstrap";
-import E3 from "../assets/images/E3.png";
-import M1 from "../assets/images/M1.png";
-import M2 from "../assets/images/M2.png";
-import M3 from "../assets/images/M4.png";
-import M4 from "../assets/images/M3.png";
+import M1 from "../assets/images/M1.svg";
+import M2 from "../assets/images/M2.svg";
 import vetorArraw from "../assets/images/VectorArraw.svg";
 
 export const Experiences = () => {
@@ -13,7 +10,7 @@ export const Experiences = () => {
       <Row>
         <Col sm={12} lg={6}>
           <div className="Img3">
-            <img src={E3} alt="" className="img-fluid" />
+            <img className="M1 img-fluid" src={M1} alt="" />
           </div>
         </Col>
         <Col sm={12} lg={6}>
@@ -23,7 +20,7 @@ export const Experiences = () => {
             </div>
             <div>
               <h1 className="experiences-sub-text-title">
-                We Provide You The Best Experience
+                We Provide You The <br /> Best Experience
               </h1>
             </div>
             <div>
@@ -47,10 +44,10 @@ export const Experiences = () => {
 
       <Row>
         {/* order-lg-1 order-2 */}
-        <Col lg={6} md={12} className="order-md-1 order-2">
+        <Col lg={6} md={12} className="order-lg-1 order-2">
           <div className="materials-section">
             <div>
-              <h3 className="more-info">MATERIALS</h3>
+              <h3 className="materials-text-main">MATERIALS</h3>
             </div>
             <div>
               <h1 className="materials-text">
@@ -74,19 +71,11 @@ export const Experiences = () => {
           </div>
         </Col>
 
-        <Col lg={6} md={12} className="order-md-2 order-1 d-inline-block">
+        <Col lg={6} md={12} className="order-lg-2 order-1 d-inline-block">
           <Row className="flex-lg-row flex-column">
-            <Col>
-              <div>
-                <img className="M3" src={M3} alt=""></img>
-                <img className="M4" src={M4} alt=""></img>
-              </div>
-            </Col>
-
             <Col className="">
               <div>
-                <img className="M1" src={M1} alt="" />
-                <img className="M2" src={M2} alt="" />
+                <img className="M2 img-fluid" src={M2} alt="" />
               </div>
             </Col>
           </Row>

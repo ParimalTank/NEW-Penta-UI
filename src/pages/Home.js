@@ -117,7 +117,7 @@ const Home = () => {
       <div className="about-us main">
         <Row lg={4} md={2} sm={2} xs={1}>
           <Col className="about-left-texts">
-            <h3>
+            <h3 className="why-home-text">
               Why <br />
               Choosing Us
             </h3>
