@@ -9,6 +9,7 @@
 }
 .main {
   max-width: 1304px;
+  margin: auto !important;
 }
 
 .nav-home {
@@ -51,11 +52,11 @@
   span {
     position: absolute;
     right: 4px;
+    background-color: $orange;
   }
 }
 
 .why-home-text {
-  padding-left: 40px;
   font-family: "Gilroy", sans-serif;
   font-weight: 800;
   font-size: 42px;
@@ -276,6 +277,7 @@
 .product-slider {
   .slick-slider {
     .slick-list {
+      padding-top: 45px !important;
       .slick-track {
         .slick-slide {
           display: flex;
@@ -333,6 +335,7 @@
   width: 268.09px;
   height: 239.15px;
   border: none !important;
+  border-radius: 20px !important;
 }
 
 .products-images {
@@ -422,7 +425,7 @@
 
       &::before {
         content: url("../images/SliderArrawLeft.svg");
-        background-color: $white;
+        background-color: $white !important;
         border-radius: 50% !important;
         padding: 12px !important;
 
@@ -487,7 +490,6 @@
 
 .slick-list {
   margin-left: 45px;
-  padding-top: 50px;
 }
 
 /* Experience Section */
@@ -619,6 +621,7 @@
     letter-spacing: 0.175em;
     text-transform: uppercase;
     color: $orange;
+    padding-bottom: 20px;
   }
 
   .client-review-section {
@@ -784,6 +787,34 @@
   opacity: 0.5;
 }
 
+@media only screen and (max-width: 425px) {
+  .home-main-text {
+    font-size: 35px !important;
+  }
+  .home-sub-text {
+    font-size: 15px !important;
+  }
+
+  .about-us {
+    padding: 29px !important;
+  }
+
+  .why-home-text {
+    padding-left: 5px;
+  }
+
+  .about-texts {
+    padding-top: 15px;
+  }
+  .products-main {
+    text-align: center;
+  }
+
+  .product-slider {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .home-cart {
     display: none;
@@ -883,6 +914,9 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .nav-contains {
+    padding: 0 20px !important;
+  }
   .home-main-text {
     font-size: 60px !important;
   }
@@ -890,25 +924,10 @@
     font-size: 20px !important;
   }
 
-  .about-us {
-    padding: 29px !important;
-  }
-
-  .why-home-text {
-    padding-left: 5px;
-  }
-
-  .about-texts {
-    padding-top: 15px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .home-main-text {
-    font-size: 35px !important;
-  }
-  .home-sub-text {
-    font-size: 15px !important;
+  .home-cart {
+    span {
+      right: 13px !important;
+    }
   }
 
   .about-us {
@@ -922,26 +941,17 @@
   .about-texts {
     padding-top: 15px;
   }
-  .products-main {
-    text-align: center;
+
+  .experiences-section {
+    padding-bottom: 90px;
   }
 
-  .product-slider {
-    text-align: center;
+  .experiences-section {
+    padding-right: 0px;
+  }
+
+  .materials-section {
+    padding-right: 0;
+    padding-left: 32px;
   }
 }
-
-// @media only screen and (max-width: 1284px) {
-//   .experiences-section {
-//     padding-bottom: 90px;
-//   }
-
-//   .experiences-section {
-//     padding-right: 0px;
-//   }
-
-//   .materials-section {
-//     padding-right: 0;
-//     padding-left: 32px;
-//   }
-// }

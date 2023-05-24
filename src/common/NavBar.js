@@ -11,7 +11,7 @@ const Home = () => {
         <div className="main">
           <div className="nav-home">
             <nav className="navbar navbar-expand-md">
-              <div className="container-fluid">
+              <div className="container-fluid nav-contains">
                 <a className="navbar-brand abs logo-name text-white" href="#1">
                   Panto
                 </a>
@@ -73,7 +73,7 @@ const Home = () => {
 
                 <div className="home-cart">
                   <img src={bag} alt=""></img>
-                  <span className="badge rounded-circle text-bg-warning">
+                  <span className="badge rounded-circle text-light">
                     0
                   </span>
                 </div>
@@ -118,8 +118,7 @@ const Home = () => {
         <Row lg={4} md={2} sm={2} xs={1}>
           <Col className="about-left-texts">
             <h3 className="why-home-text">
-              Why <br />
-              Choosing Us
+              Why <br /> Choosing Us
             </h3>
           </Col>
           <Col>

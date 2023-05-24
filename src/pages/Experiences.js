@@ -43,7 +43,6 @@ export const Experiences = () => {
       </Row>
 
       <Row>
-        {/* order-lg-1 order-2 */}
         <Col lg={6} md={12} className="order-lg-1 order-2">
           <div className="materials-section">
             <div>
